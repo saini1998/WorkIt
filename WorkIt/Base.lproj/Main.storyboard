@@ -1,24 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NHQ-Yn-HyT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6X-WV-1xY">
+                                <rect key="frame" x="16" y="146" width="343" height="377"/>
+                                <color key="backgroundColor" red="0.10195901239999999" green="0.101959832" blue="0.1019621268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="377" id="sOg-wF-lan"/>
+                                </constraints>
+                                <string key="text">1. Click 'Begin' Button below.  2. Click 'Pick a Video'. This will open your Photos Library.  3. Select a video in which a person is doing one of the following exercises - Overhead Extension, Step Ups, Push Ups or Lateral Raise.  4. For quick model prediction, select a video with maximum 15 seconds.  5. You can trim video within the application, after selecting it.  6. Once a video is selected, it will be compressed.  7. The model will then predict the workout in the video from the 4 classes mentioned above and the answer will be displayed.</string>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kce-Xn-uZL">
+                                <rect key="frame" x="16" y="567" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="w0f-n2-X7D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" red="1" green="0.28083222814061859" blue="0.16810966919229697" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X4O-uU-PKB" kind="show" id="uiT-2I-21u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-a8-CR3">
+                                <rect key="frame" x="16" y="79" width="343" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="L9m-QC-d4A"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="How-To Guide:">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="22" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="20" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.10195901239999999" green="0.101959832" blue="0.1019621268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kce-Xn-uZL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2n0-2A-XC9"/>
+                            <constraint firstItem="lXn-a8-CR3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5wP-CP-QJK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i6X-WV-1xY" secondAttribute="trailing" constant="16" id="9hc-UV-CIg"/>
+                            <constraint firstItem="lXn-a8-CR3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Bc2-TW-y86"/>
+                            <constraint firstItem="i6X-WV-1xY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DVc-eQ-fQu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lXn-a8-CR3" secondAttribute="trailing" constant="16" id="TKq-x0-be4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kce-Xn-uZL" secondAttribute="bottom" constant="50" id="aFy-ed-Epa"/>
+                            <constraint firstItem="i6X-WV-1xY" firstAttribute="top" secondItem="lXn-a8-CR3" secondAttribute="bottom" constant="8" symbolic="YES" id="i7r-5g-j7L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kce-Xn-uZL" secondAttribute="trailing" constant="16" id="iNB-tk-zAU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="clP-ce-7Ut"/>
+                    <connections>
+                        <outlet property="howToSteps" destination="i6X-WV-1xY" id="gzc-5m-dy1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="792.79999999999995" y="76.911544227886068"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="CfZ-RB-AyE">
+            <objects>
+                <viewController storyboardIdentifier="resultVC" id="X4O-uU-PKB" customClass="ResultViewController" customModule="WorkIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tBk-qx-9sA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-cP-eev">
+                                <rect key="frame" x="16" y="309" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YKN-Vl-5K6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMN-zD-sMH">
+                                <rect key="frame" x="16" y="424" width="343" height="60"/>
+                                <color key="backgroundColor" red="0.91921168565750122" green="0.36581920209478158" blue="0.32567722983490843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="COW-jN-DTJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNC-M0-G3G">
+                                <rect key="frame" x="16" y="189" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.2588199377" green="0.25882169599999999" blue="0.25882619620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o0b-L9-0bm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Pick a Video">
+                                    <color key="titleColor" red="1" green="0.28083222814061859" blue="0.16810966919229697" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPressed:" destination="X4O-uU-PKB" eventType="touchUpInside" id="C4J-3L-ZJ6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a3t-tf-625"/>
+                        <color key="backgroundColor" red="0.10195901239999999" green="0.101959832" blue="0.1019621268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AFd-cP-eev" firstAttribute="top" secondItem="RNC-M0-G3G" secondAttribute="bottom" constant="70" id="Hsp-4N-dou"/>
+                            <constraint firstItem="RNC-M0-G3G" firstAttribute="leading" secondItem="a3t-tf-625" secondAttribute="leading" constant="16" id="UMS-zF-sms"/>
+                            <constraint firstItem="a3t-tf-625" firstAttribute="trailing" secondItem="RNC-M0-G3G" secondAttribute="trailing" constant="16" id="Ufw-IO-ZXa"/>
+                            <constraint firstItem="a3t-tf-625" firstAttribute="trailing" secondItem="AFd-cP-eev" secondAttribute="trailing" constant="16" id="V0D-oC-xrU"/>
+                            <constraint firstItem="a3t-tf-625" firstAttribute="trailing" secondItem="JMN-zD-sMH" secondAttribute="trailing" constant="16" id="b2w-jS-goX"/>
+                            <constraint firstItem="AFd-cP-eev" firstAttribute="top" secondItem="a3t-tf-625" secondAttribute="top" constant="265" id="d5L-bW-PPa"/>
+                            <constraint firstItem="AFd-cP-eev" firstAttribute="leading" secondItem="a3t-tf-625" secondAttribute="leading" constant="16" id="han-Cb-s7u"/>
+                            <constraint firstItem="JMN-zD-sMH" firstAttribute="leading" secondItem="a3t-tf-625" secondAttribute="leading" constant="16" id="p9d-CG-n4W"/>
+                            <constraint firstItem="JMN-zD-sMH" firstAttribute="top" secondItem="AFd-cP-eev" secondAttribute="bottom" constant="55" id="wcI-P6-sOa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dnv-MU-KZW">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="k45-C9-ERY"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pickAVideoButton" destination="RNC-M0-G3G" id="Xmh-Dt-dsX"/>
+                        <outlet property="predictionLabel" destination="JMN-zD-sMH" id="QT9-aU-LqV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GET-oW-QRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.8" y="76.911544227886068"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ig-3j-jDT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NHQ-Yn-HyT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dwh-uK-5Xk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemRedColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gU5-1s-YLV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEg-34-Mbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="76.911544227886068"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

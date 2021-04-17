@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var howToSteps: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        howToSteps.textContainerInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
     }
 
 

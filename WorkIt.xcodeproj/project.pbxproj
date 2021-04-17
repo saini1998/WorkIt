@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385D9446261AAA3100CFE659 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D9445261AAA3100CFE659 /* ResultViewController.swift */; };
 		385F0845261A3DD6007C54C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F0844261A3DD6007C54C5 /* AppDelegate.swift */; };
 		385F0847261A3DD6007C54C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F0846261A3DD6007C54C5 /* SceneDelegate.swift */; };
 		385F0849261A3DD6007C54C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F0848261A3DD6007C54C5 /* ViewController.swift */; };
 		385F084C261A3DD6007C54C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385F084A261A3DD6007C54C5 /* Main.storyboard */; };
 		385F084E261A3DD6007C54C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385F084D261A3DD6007C54C5 /* Assets.xcassets */; };
 		385F0851261A3DD6007C54C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385F084F261A3DD6007C54C5 /* LaunchScreen.storyboard */; };
+		38AC725B261C0BF4006B84F8 /* MyWorkoutImageClassifier_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 38AC725A261C0BF4006B84F8 /* MyWorkoutImageClassifier_1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		385D9445261AAA3100CFE659 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		385F0841261A3DD6007C54C5 /* WorkIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385F0844261A3DD6007C54C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385F0846261A3DD6007C54C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		385F084D261A3DD6007C54C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385F0850261A3DD6007C54C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385F0852261A3DD6007C54C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38AC725A261C0BF4006B84F8 /* MyWorkoutImageClassifier_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyWorkoutImageClassifier_1.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		385F0843261A3DD6007C54C5 /* WorkIt */ = {
 			isa = PBXGroup;
 			children = (
+				38AC725A261C0BF4006B84F8 /* MyWorkoutImageClassifier_1.mlmodel */,
 				385F0844261A3DD6007C54C5 /* AppDelegate.swift */,
 				385F0846261A3DD6007C54C5 /* SceneDelegate.swift */,
 				385F0848261A3DD6007C54C5 /* ViewController.swift */,
+				385D9445261AAA3100CFE659 /* ResultViewController.swift */,
 				385F084A261A3DD6007C54C5 /* Main.storyboard */,
 				385F084D261A3DD6007C54C5 /* Assets.xcassets */,
 				385F084F261A3DD6007C54C5 /* LaunchScreen.storyboard */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38AC725B261C0BF4006B84F8 /* MyWorkoutImageClassifier_1.mlmodel in Sources */,
 				385F0849261A3DD6007C54C5 /* ViewController.swift in Sources */,
 				385F0845261A3DD6007C54C5 /* AppDelegate.swift in Sources */,
 				385F0847261A3DD6007C54C5 /* SceneDelegate.swift in Sources */,
+				385D9446261AAA3100CFE659 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aaryaman.WorkIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aaryaman.WorkIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
