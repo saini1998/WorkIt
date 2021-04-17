@@ -1,13 +1,13 @@
 
 # Work It Application
 
-![icon](icon.png)
+![icon](icon.png?style=centerme)
 
-### This application was created as part of Final Year Project in College.
-### It implements an Image Classifier Machine Learning Model created in Apple's Framework, called CreateML. This model was trained on images for 4 Gym Exercises - Step Ups, Push Ups, Lateral Raise and Overhead Extension. These images were manually collected from internet.
-### Training - 97%
-### Validation - 97% 
-### Testing - 59%
+This application was created as part of Final Year Project in College.\
+It implements an Image Classifier Machine Learning Model created in Apple's Framework, called CreateML. This model was trained on images for 4 Gym Exercises - Step Ups, Push Ups, Lateral Raise and Overhead Extension. These images were manually collected from internet.
+#### Training - 97%
+#### Validation - 97% 
+#### Testing - 59%
 
 ## Here are the screen shots
 
